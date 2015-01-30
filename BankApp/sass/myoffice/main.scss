@@ -1,0 +1,22 @@
+#main{
+  color: #eafff0;
+}
+
+.hidden{
+    visibility: hidden;
+    height:0;
+    position:absolute;
+}
+
+.logo{
+    font-size:35px;
+    padding-bottom:12px!important;
+    border-bottom:1px solid gray;
+
+    a#logo-container{
+        color:green;
+        padding-top:10px;
+        display:block;
+        
+    }
+}

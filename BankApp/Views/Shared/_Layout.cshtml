@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <title>@ViewBag.Title</title>
+
+    <!-- CSS  -->
+    <link href="/web/css/styles.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+<body>
+    <nav class="green" role="navigation">
+        <div class="container">
+            <div class="nav-wrapper">
+                
+                <ul id="nav-mobile" class="right side-nav">
+                    <li><a href="#">about myOffice</a></li>
+                </ul>
+                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            </div>
+        </div>
+    </nav>
+    <div class="section">
+        <!--   Icon Section   -->
+        <div class="row" ng-app="app">
+
+            <div class="col m3">
+                
+                <ul id="slide-out" class="side-nav fixed">
+                    <li class="logo"><a id="logo-container" href="@Url.Content("~")" class="brand-logo">BankApp</a></li>
+                    <li><a href="">First Sidebar Link</a></li>
+                    <li><a href="">Second Sidebar Link</a></li>
+                    <li class="no-padding">
+                        <ul class="collapsible collapsible-accordion">
+                            <li>
+                                <div class="collapsible-header">Dropdown<i class="mdi-navigation-arrow-drop-down"></i></div>
+                                <div class="collapsible-body">
+                                    <ul>
+                                        <li><a href="#!">First Dropdown Link</a></li>
+                                        <li><a href="#!">Second Dropdown Link</a></li>
+                                        <li><a href="#!">Third Dropdown Link</a></li>
+                                        <li><a href="#!">Fourth Dropdown Link</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <a href="" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            </div>
+            <div class="col m9">
+                @RenderBody()
+            </div>
+
+            <div id="modal1" class="modal">
+                <h4>Modal Header</h4>
+                <p>A bunch of text</p>
+                <a class="waves-effect btn-large modal-close">Agree</a>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="green">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">© @DateTime.Now.Year</h5>
+                    <p class="grey-text text-lighten-4">
+                        With Simple, you get a stylish Simple Visa® Card, no surprise fees, and powerful budgeting and savings tools built right into your account—all accessible via web, iPhone, and Android.
+                    </p>
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="white-text">Settings</h5>
+                    <ul>
+                        <li><a class="white-text" href="#!">Link 1</a></li>
+                    </ul>
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="white-text">Connect</h5>
+                    <ul>
+                        <li><a class="white-text" href="#!">Link 1</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Made by <a class="orange-text lighten-3" href="">BankApp &copy;</a>
+            </div>
+        </div>
+    </footer>
+
+    @Scripts.Render("~/js/libs")
+    @Scripts.Render("~/js/app")
+
+</body>
+</html>
